@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+<!-- style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <img src="/img/img1.jpeg" alt="logo">
+        <h4>home </h4>
+        <h4>about</h4>
+        <h4>contact</h4>
+        <h4>blogs</h4>
+        <h4>signup</h4>
+    </div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-blur" id="cursor-blur"></div>
+    <video src="/img/vid.mp4" muted loop autoplay ></video>
+    <div class="main" id="main">
+        <div class="page1">
+            <h1>eat.drink.play.</h1>
+            <h2>Lorem ipsum dolor sit amet consec</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim velit possimus alias? Ducimus ullam quo incidunt animi quos veritatis?</p>
+        </div>
+        <div class="page2">
+            <!-- marquee scroller -->
+            <!-- <marquee behavior="" direction="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid.
+            </marquee> -->
+            <!-- another way to make scroller -->
+            <div class="scroller" id ="scroller">
+                <div id="scroller-in">
+                    <h4>mansi gupt</h4>
+                    <h4>affirm</h4>
+                    <h4>billion</h4>
+                    <h4>dollar</h4>
+                    <h4>happy</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>mansi gupt</h4>
+                    <h4>affirm</h4>
+                    <h4>billion</h4>
+                    <h4>dollar</h4>
+                    <h4>happy</h4>
+                </div>
+            </div>
+            <div class="about-us">
+                <img src="/img/img1.jpeg" class="img" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500" alt="">
+                <div class="about-us-in">
+                    <h3>about us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae voluptates ipsam, assumenda ad temporibus. Cumque soluta blanditiis laborum minima illo doloribus, deleniti ea illum sint sit, eaque reprehenderit? Expedita?</p>
+                </div>
+                <img src="/img/img2.webp" class="img" alt="">
+            </div>
+            <div class="cards-container">
+                <div class="card" id="card1">
+                    <div class="overlay">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, maxime.</p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="overlay">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, maxime.</p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="overlay">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tilt vanilla -->
+    <!-- Include vanilla-tilt.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // Initialize vanilla-tilt.js on the element with the specified class
+    VanillaTilt.init(document.querySelector(".img"), {
+      max: 25, // Max tilt rotation (degrees)
+      speed: 400, // Tilt speed
+      glare: true, // Enable glare effect
+      "max-glare": 0.5 // Max glare opacity
+    });
+    
+  </script>
+
+<!-- gsap animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- gsap scroll trigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>

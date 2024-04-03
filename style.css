@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* cursor */
+.cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    z-index: 99;
+    position: fixed;
+}
+
+.cursor-blur {
+    height: 305px;
+    width: 305px;
+    background-color: #96c11e6f;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+.nav {
+    height: 145px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    gap: 40px;
+    z-index: 99;
+}
+
+.nav img {
+    height: 75px;
+}
+
+.nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.626);
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+.page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+}
+
+.page1 h1::before {
+    content: "eat.drink.play.";
+    position: absolute;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 3px #95c11e;
+    z-index: -1;
+}
+
+.page1 h2 {
+    font-size: 33px;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+.page1 p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+}
+
+/* page 2 */
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 10;
+}
+
+/* scroller */
+.scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    animation: scroll 15s linear infinite;
+    animation-delay: 0s;
+    animation-duration: 20s;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    margin-right: 20px;
+    color: transparent;
+    transition: all linear .5s;
+    -webkit-text-stroke: 2px #95c11e;
+}
+
+#scroller-in h4:hover {
+    color: #95c11e;
+    -webkit-text-stroke: 2px #95c11e;
+}
+
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.about-us {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.about-us img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.about-us-in {
+    width: 40%;
+    text-align: center;
+}
+
+.about-us-in h3 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.about-us-in p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    z-index: 10;
+}
+.cards-container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.card{
+    height: 80%;
+    width: 24%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+#card1{
+    background-image: url(img/img4.webp);
+}
+#card2{
+    background-image: url(img/img5.jpeg);
+}
+#card3{
+    background-image: url(img/img3.jpeg);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding: 50px;
+    padding-top: 160px;
+}
+.overlay h4,.overlay p{
+color: black;
+}
+.overlay h4{
+    font-weight: 500;
+    
+}
+
+
+
+
+
+
+/* vanilla tilt */
+/* .img::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    );
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .img:hover::before {
+    opacity: 1;
+  }
+   */
